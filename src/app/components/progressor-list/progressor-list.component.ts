@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { TutorialService } from 'src/app/services/tutorial.service';
+import { ProgressorService } from 'src/app/services/progressor.service';
 
 @Component({
   selector: 'app-tutorials-list',
-  templateUrl: './tutorials-list.component.html',
-  styleUrls: ['./tutorials-list.component.css']
+  templateUrl: './progressor-list.component.html',
+  styleUrls: ['./progressor-list.component.css']
 })
-export class TutorialsListComponent implements OnInit {
+export class ProgressorListComponent implements OnInit {
 
   progresses: any;
-  constructor(private tutorialService: TutorialService) { }
+  constructor(private tutorialService: ProgressorService) { }
 
   ngOnInit(): void {
     this.retrieveTutorials();

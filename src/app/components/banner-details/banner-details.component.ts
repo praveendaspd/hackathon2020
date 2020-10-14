@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TutorialService } from 'src/app/services/tutorial.service';
+import { ProgressorService } from 'src/app/services/progressor.service';
 
 @Component({
   selector: 'app-banner-details',
@@ -10,7 +10,7 @@ export class BannerDetailsComponent implements OnInit {
   tutorials: any;
   currentTutorial = this.tutorials;
 
-  constructor(private tutorialService: TutorialService) { }
+  constructor(private tutorialService: ProgressorService) { }
 
   ngOnInit(): void {
     this.retrieveTutorials();
