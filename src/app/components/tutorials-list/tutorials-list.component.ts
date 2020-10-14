@@ -31,7 +31,7 @@ export class TutorialsListComponent implements OnInit {
         });
   }
 
-  refreshList(): void {
+  /*refreshList(): void {
     this.retrieveTutorials();
     this.currentTutorial = null;
     this.currentIndex = -1;
@@ -64,5 +64,5 @@ export class TutorialsListComponent implements OnInit {
         error => {
           console.log(error);
         });
-  }
+  }*/
 }
