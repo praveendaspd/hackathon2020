@@ -5,13 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { ProgressorListComponent } from './components/progressor-list/progressor-list.component';
 import {BannerDetailsComponent} from './components/banner-details/banner-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TutorialsListComponent,
+    ProgressorListComponent,
     BannerDetailsComponent
   ],
   imports: [

@@ -7,7 +7,7 @@ const baseUrl = 'http://localhost:8080/api/progress';
 @Injectable({
   providedIn: 'root'
 })
-export class TutorialService {
+export class ProgressorService {
 
   constructor(private http: HttpClient) { }
 

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { ProgressorListComponent } from './components/progressor-list/progressor-list.component';
 import { BannerDetailsComponent } from './components/banner-details/banner-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: TutorialsListComponent },
+  { path: 'home', component: ProgressorListComponent },
   { path: 'banner', component: BannerDetailsComponent }
 ];
 
