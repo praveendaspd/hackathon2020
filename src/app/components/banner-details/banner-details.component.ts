@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { TutorialService } from 'src/app/services/tutorial.service';
 
 @Component({
-  selector: 'app-tutorials-list',
-  templateUrl: './tutorials-list.component.html',
-  styleUrls: ['./tutorials-list.component.css']
+  selector: 'app-banner-details',
+  templateUrl: './banner-details.html'
 })
-export class TutorialsListComponent implements OnInit {
+export class BannerDetailsComponent implements OnInit {
 
-  progresses: any;
+  tutorials: any;
+  currentTutorial = this.tutorials;
+
   constructor(private tutorialService: TutorialService) { }
 
   ngOnInit(): void {
@@ -19,12 +20,11 @@ export class TutorialsListComponent implements OnInit {
     this.tutorialService.getAll()
       .subscribe(
         data => {
-          this.progresses = data;
+          this.tutorials = data;
           console.log(data);
         },
         error => {
           console.log(error);
         });
   }
-
 }
